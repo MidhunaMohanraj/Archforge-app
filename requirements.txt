@@ -1,0 +1,7 @@
+# No third-party packages are required - the prototype runs on the
+# standard library only, so it can be handed to anyone with Python 3.10+
+# and nothing else installed.
+#
+# If you later swap the retrieval stage for embeddings, add e.g.:
+#   sentence-transformers
+#   faiss-cpu
