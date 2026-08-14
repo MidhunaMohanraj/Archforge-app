@@ -1,0 +1,20 @@
+{
+  "model": {
+    "base_url": "http://localhost:11434/v1",
+    "api_key": "ollama",
+    "model_name": "llama3.2",
+    "temperature": 0.2,
+    "max_tokens": 1024
+},
+  "retrieval": {
+    "docs_dir": "sample_docs",
+    "top_k": 4,
+    "min_score": 0.05
+  },
+  "validation": {
+    "ruleset": "misra-c-2012-subset",
+    "max_repair_attempts": 2,
+    "run_compile_check": false,
+    "compiler": "gcc"
+  }
+}
