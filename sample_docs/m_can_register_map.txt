@@ -1,1 +1,23 @@
+M_CAN Peripheral - Register Reference (excerpt for demo purposes)
 
+CCCR (CC Control Register), offset 0x018
+Controls the operating mode of the M_CAN core. Bit 0 (INIT) must be set
+to 1 before any configuration register is written, and cleared to 0 to
+start normal operation. Bit 1 (CCE) enables configuration change while
+INIT is set.
+
+NBTP (Nominal Bit Timing and Prescaler Register), offset 0x01C
+Defines the nominal bit rate. Field NBRP (bits 25:16) is the baud rate
+prescaler, NTSEG1 (bits 15:8) and NTSEG2 (bits 6:0) define the sample
+point.
+
+TXBC (Tx Buffer Configuration Register), offset 0x0C0
+Configures the number of dedicated Tx buffers and the start address of
+the Tx FIFO/queue in Message RAM.
+
+Recommended init sequence
+1. Set CCCR.INIT = 1 and wait for CCCR.INIT to read back as 1.
+2. Set CCCR.CCE = 1 to allow configuration.
+3. Program NBTP with the nominal bit timing values for the target clock.
+4. Program TXBC with the Tx buffer layout.
+5. Clear CCCR.INIT to 0 to leave initialization mode and start the core.
