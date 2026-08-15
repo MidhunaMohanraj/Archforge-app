@@ -6,7 +6,6 @@ to draft from, where the reference documents are, and which standards
 checks to enforce. Nothing about the pipeline logic itself should need to
 change between deployments - only these values.
 """
-
 from __future__ import annotations 
 
 import json  
