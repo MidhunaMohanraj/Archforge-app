@@ -7,7 +7,7 @@ checks to enforce. Nothing about the pipeline logic itself should need to
 change between deployments - only these values.
 """
 
-from __future__ import annotations
+from __future__ import annotations 
 
 import json  
 from dataclasses import dataclass, field, asdict
