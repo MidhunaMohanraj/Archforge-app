@@ -13,9 +13,7 @@ import json
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
 
-
 DEFAULT_CONFIG_PATH = Path("archforge.config.json")
-
 
 @dataclass
 class ModelConfig:
