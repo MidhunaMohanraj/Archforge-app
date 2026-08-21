@@ -6,7 +6,6 @@ Usage:
     python -m archforge.cli ask --file query.txt
     python -m archforge.cli init-config
 """
-
 from __future__ import annotations
 
 import argparse
