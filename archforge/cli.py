@@ -12,7 +12,6 @@ import argparse
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
-
 from .config import ArchForgeConfig, DEFAULT_CONFIG_PATH
 from .pipeline import ArchForgePipeline
 
