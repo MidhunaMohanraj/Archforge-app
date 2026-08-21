@@ -17,7 +17,6 @@ from .pipeline import ArchForgePipeline
 
 LOG_DIR = Path("logs")
 
-
 def cmd_ask(args: argparse.Namespace) -> None:
     config = ArchForgeConfig.load(args.config)
     pipeline = ArchForgePipeline(config)
